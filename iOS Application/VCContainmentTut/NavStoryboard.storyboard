@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="dlJ-f4-BCr">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="I5d-vP-tWM">
+            <objects>
+                <navigationController storyboardIdentifier="Nav Controller" definesPresentationContext="YES" id="dlJ-f4-BCr" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="bdC-Ga-kIZ">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.36630360401459855" green="0.67749201642335766" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yxS-QV-JUJ" kind="relationship" relationship="rootViewController" id="hYG-zr-YIt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F4G-U7-V1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-337" y="-107"/>
+        </scene>
+        <!--Λεπτομέρειες συμβάντος-->
+        <scene sceneID="cba-ha-XIS">
+            <objects>
+                <viewController storyboardIdentifier="details_alert" title="Λεπτομέρειες συμβάντος" id="uMy-my-AJc" userLabel="Λεπτομέρειες συμβάντος" customClass="AlertDetails" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="glb-yk-KcW"/>
+                        <viewControllerLayoutGuide type="bottom" id="49D-wt-Z8v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1dg-jK-PW1">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cOT-Uf-T8Y">
+                                <rect key="frame" x="-20" y="-20" width="340" height="602"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75644277597402598" green="0.75644277597402598" blue="0.75644277597402598" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="alertDetailScroll" destination="cOT-Uf-T8Y" id="Blg-6g-YIG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12B-qX-0Y2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-337" y="572"/>
+        </scene>
+        <!--postAlert-->
+        <scene sceneID="BzA-BK-nLd">
+            <objects>
+                <viewController storyboardIdentifier="postAlert" title="Νέο συμβάν" id="NuG-bt-UjU" userLabel="postAlert" customClass="postAlertViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5dk-wy-wTW"/>
+                        <viewControllerLayoutGuide type="bottom" id="HjN-o1-JJZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GfT-Ew-grv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gG2-s5-rEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="-787"/>
+        </scene>
+        <!--All Alerts-->
+        <scene sceneID="s7j-3F-edZ">
+            <objects>
+                <viewController storyboardIdentifier="allalerts" title="Thessaloniki Alert" id="yxS-QV-JUJ" userLabel="All Alerts" customClass="doy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w6F-jo-YWB"/>
+                        <viewControllerLayoutGuide type="bottom" id="4xr-IM-Lx8"/>
+                    </layoutGuides>
+                    <view key="view" tag="99" contentMode="scaleToFill" id="xqb-FQ-oNQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SOh-uc-V9V">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="yxS-QV-JUJ" id="M8A-56-d10"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Όλα τα συμβάντα" id="DOI-mc-KbE"/>
+                    <connections>
+                        <outlet property="mapView" destination="SOh-uc-V9V" id="OTO-be-wbx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aq7-VW-guR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="-97"/>
+        </scene>
+        <!--Επικίνδυνα σημεία-->
+        <scene sceneID="ECD-4U-ZBM">
+            <objects>
+                <viewController storyboardIdentifier="asti_alerts" title="Αστικός κίνδυνος" id="u10-Dj-5un" userLabel="Επικίνδυνα σημεία" customClass="doy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WtO-n5-7Qi"/>
+                        <viewControllerLayoutGuide type="bottom" id="xqH-QC-voD"/>
+                    </layoutGuides>
+                    <view key="view" tag="3" contentMode="scaleToFill" id="a3R-J3-TYk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Oeb-NJ-Xfg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="u10-Dj-5un" id="B8G-4Q-KPM"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="Oeb-NJ-Xfg" id="aDO-gE-zMW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="54o-s1-LDH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510" y="-97"/>
+        </scene>
+        <!--settings-->
+        <scene sceneID="MNS-Uu-8EE">
+            <objects>
+                <viewController storyboardIdentifier="settings" title="Όροι χρήσης" id="C4x-v9-fJT" userLabel="settings" customClass="SettingsView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RLl-IZ-zvH"/>
+                        <viewControllerLayoutGuide type="bottom" id="nK4-58-Sm1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MBM-V3-a8k">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rr0-qX-LvH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510" y="-787"/>
+        </scene>
+        <!--Χρήσιμες πληροφορίες-->
+        <scene sceneID="8dZ-cx-SJd">
+            <objects>
+                <viewController storyboardIdentifier="info_alerts" title="Χρήσιμες πληροφορίες" id="vVD-vp-vLY" userLabel="Χρήσιμες πληροφορίες" customClass="doy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tsi-9o-oBJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="KOe-nE-ikK"/>
+                    </layoutGuides>
+                    <view key="view" tag="4" contentMode="scaleToFill" id="GeU-1Z-9N8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="j3L-nT-gB9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vVD-vp-vLY" id="qRM-Aj-iah"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="j3L-nT-gB9" id="CW1-Bl-Stb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QgP-Uc-2yx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="898" y="-97"/>
+        </scene>
+        <!--Κυκλοφοριακό-->
+        <scene sceneID="Jgo-Go-AG3">
+            <objects>
+                <viewController storyboardIdentifier="kyklo_alerts" title="Κυκλοφοριακό" id="cvR-NY-PF3" userLabel="Κυκλοφοριακό" customClass="doy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k9R-4q-0gg"/>
+                        <viewControllerLayoutGuide type="bottom" id="qRX-f3-PSG"/>
+                    </layoutGuides>
+                    <view key="view" tag="1" contentMode="scaleToFill" id="zOW-BT-tCW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sz9-0b-F7R">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="cvR-NY-PF3" id="dJu-V4-gKg"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Κυκλοφοριακό / Ατύχημα" id="rHj-CJ-QCT"/>
+                    <connections>
+                        <outlet property="mapView" destination="sz9-0b-F7R" id="I3l-DD-68E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RDM-WW-elP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149" y="572"/>
+        </scene>
+        <!--Πολιτιστικά Δρώμενα-->
+        <scene sceneID="wDI-Xc-bHf">
+            <objects>
+                <viewController storyboardIdentifier="polit_alerts" title="Πολιτιστικά Δρώμενα" id="8Ym-it-XeV" userLabel="Πολιτιστικά Δρώμενα" customClass="doy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iZI-Hr-vOv"/>
+                        <viewControllerLayoutGuide type="bottom" id="of8-JJ-ZQ9"/>
+                    </layoutGuides>
+                    <view key="view" tag="2" contentMode="scaleToFill" id="c4e-NO-Tym">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2cc-8G-sdn">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="8Ym-it-XeV" id="pog-10-6hQ"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Πολιτιστικά Δρώμενα" id="Rpt-kB-kyq"/>
+                    <connections>
+                        <outlet property="mapView" destination="2cc-8G-sdn" id="aBw-gK-kBr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="whi-TS-4d0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510" y="572"/>
+        </scene>
+        <!--Πορείες-->
+        <scene sceneID="VOg-wP-8Xc">
+            <objects>
+                <viewController storyboardIdentifier="alerts_pories" title="Πορείες/Διαδηλώσεις" id="6Si-q5-Rwr" userLabel="Πορείες" customClass="doy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AJf-LJ-HbT"/>
+                        <viewControllerLayoutGuide type="bottom" id="nac-Jx-BwM"/>
+                    </layoutGuides>
+                    <view key="view" tag="5" contentMode="scaleToFill" id="m7k-ap-2lF" userLabel="Πορείες">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7dQ-HL-Tsu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="6Si-q5-Rwr" id="UXa-QL-lZT"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="7dQ-HL-Tsu" id="19i-s6-vzB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FX2-KX-413" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="576"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
