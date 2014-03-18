@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.delis.thessalertn.postAlert" >
+    
+
+    <item android:id="@+id/cancel_post"
+        android:title="@string/post_alert_cancel"
+        android:showAsAction="ifRoom"  />
+    <item android:id="@+id/send_post"
+        android:title="@string/post_alert_send"
+        android:showAsAction="always"  />
+
+</menu>

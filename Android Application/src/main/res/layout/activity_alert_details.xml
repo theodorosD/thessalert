@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.delis.thessalertn.Alert_Details"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top"
+        android:weightSum="0.9"
+        android:baselineAligned="false">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_weight="0.31"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_horizontal|top"
+            android:paddingTop="0dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alert_details_title"
+            android:id="@+id/textView"
+            android:singleLine="true"
+            android:textColor="@color/ios_blue"
+            android:layout_marginLeft="3dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/alert_details_title_text"
+            android:layout_weight="0.10"
+            android:typeface="serif"
+            android:layout_marginLeft="3dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alert_details_descriptio"
+            android:id="@+id/textView2"
+            android:textColor="@color/ios_blue"
+            android:layout_marginLeft="3dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/alert_details_descr_text"
+            android:layout_weight="0.15"
+            android:maxLines="5"
+            android:typeface="serif"
+            android:layout_marginLeft="3dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/alert_details_time_text"
+            android:typeface="serif"
+            android:layout_marginLeft="3dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/alert_details_address_text"
+            android:typeface="serif"
+            android:layout_marginLeft="3dp" />
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.delis.thessalertn.MainActivity" >
+    <group android:checkableBehavior="single">
+    <item android:id="@+id/alert_all"
+        android:title="@string/alert_all"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/alert_kyklo"
+        android:title="@string/alert_kyklo"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/alert_politis"
+        android:title="@string/alert_politis"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/alert_danger"
+        android:title="@string/alert_danger"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/alert_info"
+        android:title="@string/alert_info"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/alert_poria"
+        android:title="@string/alert_poria"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    </group>
+    <item android:id="@+id/main_refresh"
+        android:title="@string/main_refresh_text"
+        android:icon="@drawable/refresh"
+        android:showAsAction="always"  />
+</menu>

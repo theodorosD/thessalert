@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Θεσσαλονίκη Alert</string>
+    <string name="alert_all">Όλα τα συμβάντα</string>
+    <string name="alert_kyklo">Κυκλοφοριακό/Ατύχημα</string>
+    <string name="alert_politis">Πολιτιστικά δρώμενα</string>
+    <string name="alert_danger">Κίνδυνος πόλης</string>
+    <string name="alert_info">Χρήσιμες πληροφορίες</string>
+    <string name="alert_poria">Πορείες/Διαδηλώσεις</string>
+    <string name="GPSAlertDialogTitle">Δεν βρέθηκε το στίγμα σας</string>
+    <string name="GPSAlertDialogMessage">Η εφαρμογή χρησιμποποιεί την τοποθεσία σας για την καταχώρηση συμβάντων. Ενεργοποιήστε την πρόσβαση στη τοποθεσία σας μέσω GPS.</string>
+    <string name="settings">Ρυθμίσεις</string>
+    <string name="cancel">Όχι τώρα</string>
+    <string name="title_activity_alert__details">Alert_Details</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_refresh_text">Ανανέωση</string>
+    <string name="alert_details_title">Τίτλος</string>
+    <string name="alert_details_descriptio">Περιγραφή</string>
+    <string name="alert_details_close">Κλείσιμο</string>
+    <string name="alert_details_activity_title">Λεπτομέρειες</string>
+    <string name="title_activity_alert_image_fullscreen">AlertImageFullscreen</string>
+    <string name="title_activity_post_alert">Νέο συμβάν</string>
+    <string name="post_alert_cancel">Άκυρο</string>
+    <string name="post_alert_send">Αποστολή</string>
+    <string name="alert_category">Κατηγορία συμβάντος</string><string name="Address_hint">Διεύθυνση</string>
+
+
+
+</resources>
