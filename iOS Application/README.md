@@ -1,6 +1,3 @@
 thessalert
 ==========
-Θεσσαλονίκη Alert is my official entry for Thessaloniki's municipality application contest.
-More info @ http://thessaloniki.appsforgreece.eu
-
-Θεόδωρος Δεληγιαννίδης
+H εφαρμογή για iOS απαιτεί την τελευταία έκδοση του Xcode και SDK για 7.1
