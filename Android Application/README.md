@@ -1,6 +1,5 @@
-thessalert
-==========
-Θεσσαλονίκη Alert is my official entry for Thessaloniki's municipality application contest.
-More info @ http://thessaloniki.appsforgreece.eu
+Θεσσαλονίκη Alert 
 
-Θεόδωρος Δεληγιαννίδης
+H εφαρμογή για Android απαιτεί την τελευταία έκδοση του Android Studio και τα εξης libraries
+-Parse
+-Android async http
